@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Elya Popova](https://up.htmlacademy.ru/adaptive/16/user/864807).
-* Наставник: `Максим Пушкарев`.
+* Наставник: `Максим Пушкарев`(https://htmlacademy.ru/profile/id87167).
 
 ---
 
