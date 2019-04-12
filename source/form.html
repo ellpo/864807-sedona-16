@@ -41,23 +41,23 @@
           <form class="comment__visitor-comment" action="https://echo.htmlacademy.ru"
             method="get">
             <fieldset>
-              <legend class="block-title">Представьтесь:</legend>
-              <ul class="name-list">
-                <li class="name-list__item">
+              <legend>Представьтесь:</legend>
+              <ul class="comment__list">
+                <li class="comment__item">
                   <label class="input-field-name" for="first-name">
                     Имя<sup>*</sup>:
                   </label>
                   <input type="text" name="first-name" id="first-name"
                     placeholder="Петр" required/>
                 </li>
-                <li class="name-list__item">
+                <li class="comment__item">
                   <label class="input-field-name" for="second-name">
                     Фамилия<sup>*</sup>:
                   </label>
                   <input type="text" name="second-name" id="second-name"
                     placeholder="Иванов" required/>
                 </li>
-                <li class="name-list__item">
+                <li class="comment__item">
                   <label class="input-field-name" for="middle-name">
                     Отчество:
                   </label>
@@ -67,9 +67,9 @@
               </ul>
             </fieldset>
             <fieldset>
-              <legend class="block-title">Контактная информация:</legend>
-              <ul class="contact-list">
-                <li class="contact-list__item">
+              <legend>Контактная информация:</legend>
+              <ul class="comment__list">
+                <li class="comment__item">
                   <label class="input-field-name" for="phone-number">
                     Контактный телефон<sup>*</sup>:
                   </label><br/>
@@ -78,7 +78,7 @@
                     pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     id="phone-number" required/>
                 </li>
-                <li class="contact-list__item">
+                <li class="comment__item">
                   <label class="input-field-name" for="email">
                     Электронная почта<sup>*</sup>:
                   </label><br/>
@@ -88,19 +88,19 @@
               </ul>
             </fieldset>
             <fieldset>
-              <legend class="block-title">Ваше общее впечатление:</legend>
-              <ul class="impression-list">
-                <li class="impression-list__item">
+              <legend>Ваше общее впечатление:</legend>
+              <ul class="comment__list">
+                <li class="comment__item">
                   <input type="radio" name="impression" value="good"
                     id="good-impression" checked/>
                   <label for="good-impression">Скорее положительное</label>
                 </li>
-                <li class="impression-list__item">
+                <li class="comment__item">
                   <input type="radio" name="impression" value="bad"
                     id="bad-impression"/>
                   <label for="bad-impression">Скорее отрицательное</label>
                 </li>
-                <li class="impression-list__item">
+                <li class="comment__item">
                   <input type="radio" name="impression" value="neutrally"
                     id="neutral-impression"/>
                   <label for="neutral-impression">Затрудняюсь ответить</label>
@@ -108,38 +108,36 @@
               </ul>
             </fieldset>
             <fieldset>
-              <legend class="block-title">
-                Посещенные достопримечательности:
-              </legend>
-              <ul class="place-list">
-                <li class="place-list__item">
+              <legend>Посещенные достопримечательности:</legend>
+              <ul class="comment__list">
+                <li class="comment__item">
                   <input type="checkbox" name="bridge-of-devil"
                     id="bridge-of-devil" checked/>
                   <label for="bridge-of-devil">Мост Дьявола</label>
                 </li>
-                <li class="place-list__item">
+                <li class="comment__item">
                   <input type="checkbox" name="mountain-bell" id="mountain-bell"
                     checked/>
                   <label for="mountain-bell">Гора Колокол</label>
                 </li>
-                <li class="place-list__item">
+                <li class="comment__item">
                   <input type="checkbox" name="slide-park" id="slide-park"
                     checked/>
                   <label for="slide-park">Слайд-парк</label>
                 </li>
-                <li class="place-list__item">
+                <li class="comment__item">
                   <input type="checkbox" name="red-rock" id="red-rock"/>
                   <label for="red-rock">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend class="block-title">Опишите свои эмоции:</legend>
+              <legend>Опишите свои эмоции:</legend>
               <textarea name="visitor-description" rows="7"
                 placeholder="Опишите подробно все свои восторги">
               </textarea>
             </fieldset>
-            <button class="comment-button" type="submit">
+            <button class="comment__button" type="submit">
               Отправить отзыв
             </button>
           </form>
