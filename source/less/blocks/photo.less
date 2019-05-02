@@ -1,25 +1,29 @@
-.photo__list {
-  list-style: none;
-  padding-left: 0;
-}
+@import "../variables";
 
-.photo__title {
-  font-size: 18px;
-  text-transform: uppercase;
-}
+.photo {
+  &__list {
+    list-style: none;
+    padding-left: 0;
+  }
 
-.photo__description {
-  font-size: 14px;
-  line-height: 24px;
-}
+  &__title {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
 
-.photo__list-item {
-  font-size: 14px;
-  line-height: 24px;
-}
+  &__description {
+    font-size: 14px;
+    line-height: 24px;
+  }
 
-.photo__name,
-.photo__polling {
-  font-family: "PT Sans bold", Arial, sans-serif;
-  text-transform: uppercase;
+  &__list-item {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__name,
+  &__polling {
+    font-family: "PT Sans bold", Arial, sans-serif;
+    text-transform: uppercase;
+  }
 }
