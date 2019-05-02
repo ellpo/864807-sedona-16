@@ -1,16 +1,28 @@
-.advantages-list__preview {
-  font-size: 18px;
-  font-family: "PT Sans bold", Arial, sans-serif;
-  text-transform: uppercase;
-}
-
-.advantages-list__description {
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-}
+@import "../variables";
 
 .advantages-list {
   list-style: none;
   padding-left: 0;
+  background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+  width: 1200px;
+}
+
+  &__preview {
+    font-size: 18px;
+    font-family: "PT Sans bold", Arial, sans-serif;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
 }
