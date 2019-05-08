@@ -7,7 +7,7 @@
 
 .site-list__item {
   background-color: @skyblue;
-  font-family: "PT Sans bold", Arial, sans-serif;
+  font-family: "PT Sans bold", "Arial", sans-serif;
   box-shadow: inset 0px 1px 0 0 #cccccc;
   text-transform: uppercase;
   padding: 18px 90px;
@@ -28,14 +28,8 @@
     width: 239px;
   }
 
-  &:nth-child(3n) {
-    @media (min-width: @tablet-width) {
-      margin-left: 140px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-left: 221px;
-    }
+  &--right {
+    margin-left: auto;
   }
 }
 
