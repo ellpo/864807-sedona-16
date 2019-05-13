@@ -1,47 +1,39 @@
 @import "../variables";
 
-.social {
-  &__list {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    justify-content: space-between;
+.social__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
 
-    @media (min-width: @tablet-width) {
-      width: 156px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 156px;
-    }
+  @media (min-width: @tablet-width) {
+    width: 156px;
   }
+}
 
-  &__link {
-    display: inline-block;
-    width: 48px;
-    height: 46px;
-    background-color: @skyblue;
-    vertical-align: middle;
-  }
+.social__link {
+  display: inline-block;
+  width: 48px;
+  height: 46px;
+  background-color: @skyblue;
+  vertical-align: middle;
+  background-repeat: no-repeat;
 
-  &__link--twitter {
+  &--twitter {
     background-image: url("../img/icon-twitter.svg");
     background-size: 18px 14px;
-    background-repeat: no-repeat;
     background-position: 17px 16px;
   }
 
-  &__link--facebook {
+  &--facebook {
     background-image: url("../img/icon-facebook.svg");
     background-size: 9px 18px;
-    background-repeat: no-repeat;
     background-position: 21px 14px;
   }
 
-  &__link--youtube {
+  &--youtube {
     background-image: url("../img/icon-youtube.svg");
     background-size: 20px 14px;
-    background-repeat: no-repeat;
     background-position: 14px 16px;
   }
 }

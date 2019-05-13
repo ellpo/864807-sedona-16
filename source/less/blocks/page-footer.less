@@ -1,23 +1,21 @@
 @import "../variables";
 
-.page-footer {
-  &__hashtag {
-    font-size: 21px;
-    font-family: "PT Sans bold", Arial, sans-serif;
-    text-transform: uppercase;
+.page-footer__hashtag {
+  font-size: 21px;
+  font-family: "PT Sans bold", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.page-footer__wrapper {
+  margin: 0 85px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 60px;
+    display: flex;
+    justify-content: space-between;
   }
 
-  &__wrapper {
-    margin: 0 85px;
-
-    @media (min-width: @tablet-width) {
-      margin: 0 60px;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin: 0 120px;
-    }
+  @media (min-width: @desktop-width) {
+    margin: 0 120px;
   }
 }
