@@ -58,7 +58,7 @@
           <form class="comment__visitor-comment" action="https://echo.htmlacademy.ru"
             method="get">
             <fieldset class="comment__chapter comment__chapter--name">
-              <legend>Представьтесь:</legend>
+              <legend class="comment__legend">Представьтесь:</legend>
               <ul class="comment__list">
                 <li class="comment__item">
                   <label class="input-field-name" for="first-name">
@@ -84,7 +84,7 @@
               </ul>
             </fieldset>
             <fieldset class="comment__chapter">
-              <legend>Контактная информация:</legend>
+              <legend class="comment__legend">Контактная информация:</legend>
               <ul class="comment__list contacts">
                 <li class="comment__item">
                   <label class="input-field-name" for="phone-number">
@@ -104,8 +104,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="comment__chapter comment__chapter--emotions">
-              <legend>Ваше общее впечатление:</legend>
+            <fieldset class="comment__chapter comment__chapter--impressions">
+              <legend class="comment__legend">Ваше общее впечатление:</legend>
               <ul class="comment__list">
                 <li class="comment__item">
                   <input type="radio" name="impression" value="good"
@@ -125,7 +125,7 @@
               </ul>
             </fieldset>
             <fieldset class="comment__chapter comment__chapter--visited">
-              <legend>Посещенные достопримечательности:</legend>
+              <legend class="comment__legend">Посещенные достопримечательности:</legend>
               <ul class="comment__list landmarks">
                 <li class="comment__item">
                   <input type="checkbox" name="bridge-of-devil"
@@ -148,8 +148,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="comment__chapter">
-              <legend>Опишите свои эмоции:</legend>
+            <fieldset class="comment__chapter comment__chapter--emotions">
+              <legend class="comment__legend">Опишите свои эмоции:</legend>
               <textarea name="visitor-description" rows="7"
                 placeholder="Опишите подробно все свои восторги">
               </textarea>
@@ -158,7 +158,6 @@
               Отправить отзыв
             </button>
           </form>
-        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -189,6 +188,7 @@
         </div>
       </div>
     </footer>
+    </div>
   </div>
   </body>
 </html>
