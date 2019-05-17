@@ -4,11 +4,27 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 82%;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 57%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 36%;
+  }
 }
 
 .visiting__title {
+  font-family: "PT Sans bold", "Arial", sans-serif;
   font-size: 21px;
   text-transform: uppercase;
+  margin: 20px auto;
+  width: 100%;
+  text-align: center;
 }
 
 .visiting__button {
@@ -18,4 +34,22 @@
   background-color: @skyblue;
   color: #ffffff;
   border-style: none;
+  padding: 18px 39px;
+  width: 87%;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 60%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 38%;
+  }
+}
+
+.visiting__search {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
 }
