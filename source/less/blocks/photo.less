@@ -11,13 +11,31 @@
 }
 
 .photo__title {
+  font-family: "PT Sans bold", "Arial", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .photo__description {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 22px;
+  text-transform: uppercase;
+  width: 96%;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 67%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 36%;
+  }
 }
 
 .photo__list-item {
@@ -47,4 +65,26 @@
 .photo__polling {
   font-family: "PT Sans bold", "Arial", sans-serif;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.photo__author {
+  margin: 0;
+}
+
+.photo__polling svg {
+  margin-right: 10px;
+}
+
+.photo__wrapper {
+  margin: 0 auto;
+  width: 88%;
+
+  @media (min-width: @tablet-width) {
+    width: 84%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
 }

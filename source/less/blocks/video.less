@@ -1,11 +1,131 @@
 @import "../variables";
 
+.video {
+  position: relative;
+}
+
 .video__title {
+  font-family: "PT Sans bold", "Arial", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
+  padding: 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video__description {
   font-size: 14px;
   line-height: 24px;
+  text-transform: uppercase;
+  padding: 0;
+  width: 74%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 54%;
+    margin-bottom: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 36%;
+    margin-bottom: 78px;
+  }
+}
+
+.video__control {
+  padding: 18px 10px;
+  margin: 0 auto;
+  width: 280px;
+  background-color: #eaeaea;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.6;
+    bottom: 0px;
+    left: 0px;
+    width: 84%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 66%;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 45px;
+    bottom: 63px;
+    left: 20px;
+    background-color: black;
+    opacity: 0.6;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.video__scroll {
+  position: absolute;
+  content: "";
+  width: 235px;
+  height: 3px;
+  background-color: #ffffff;
+  opacity: 0.2;
+  bottom: 82px;
+  left: 42px;
+}
+
+.video__scroll-toggle {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: -4px;
+  left: 31px;
+}
+
+.video__replay,
+.video__subtitles,
+.video__fullscreen {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.video__replay {
+  margin-left: 18px;
+
+  @media (min-width: @tablet-width) {
+    fill: #ffffff;
+  }
+}
+
+.video__subtitles {
+  margin-left: 120px;
+
+  @media (min-width: @tablet-width) {
+    fill: #ffffff;
+    margin-left: 475px;
+  }
+}
+
+.video__fullscreen {
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    fill: #ffffff;
+  }
 }

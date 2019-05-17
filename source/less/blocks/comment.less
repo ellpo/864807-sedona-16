@@ -16,6 +16,8 @@
 }
 
 .comment__visitor-comment {
+  margin-top: 10px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -107,6 +109,8 @@
 
 .comment__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .comment__legend {
@@ -117,4 +121,21 @@
   @media (min-width: @tablet-width) {
     font-size: 21px;
   }
+}
+
+.comment__item {
+  &--personal {
+    display: flex;
+  }
+}
+
+.comment__item input {
+  background-color: #f2f2f2;
+  width: 100%;
+  border: none;
+  height: 58px;
+}
+
+.comment__item label {
+  margin-right: 10%;
 }
