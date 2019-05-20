@@ -1,8 +1,16 @@
 @import "../variables";
 
+.video {
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    width: 67%;
+  }
+}
+
 .photo__list {
   list-style: none;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -81,7 +89,7 @@
   width: 88%;
 
   @media (min-width: @tablet-width) {
-    width: 84%;
+    width: 85%;
   }
 
   @media (min-width: @desktop-width) {

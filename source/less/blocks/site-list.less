@@ -10,14 +10,21 @@
   font-family: "PT Sans bold", "Arial", sans-serif;
   box-shadow: inset 0px 1px 0 0 #cccccc;
   text-transform: uppercase;
-  padding: 18px 90px;
   text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0;
     width: 153px;
-    padding-top: 17px;
-    padding-bottom: 17px;
     text-align: center;
     background-color: #ffffff;
     font-size: 14px;
@@ -34,10 +41,23 @@
 }
 
 .site-list__link {
+  display: block;
   text-decoration: none;
   color: @white-text;
+  padding: 22px 67px;
+
+  &:active {
+    color: #e5e5e5;
+  }
+
+  &:hover {
+    @media (min-width: @tablet-width) {
+      color: #81b3d2;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     color: #000000;
+    padding: 22px 23px;
   }
 }
