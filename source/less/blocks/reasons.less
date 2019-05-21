@@ -8,6 +8,10 @@
   text-align: center;
   margin: 0 auto;
   margin-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 490px;
+  }
 }
 
 .reasons__list {
@@ -22,6 +26,14 @@
 
 .reasons__item {
   background-color: #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 
   &--city,
   &--bridge {
@@ -61,16 +73,50 @@
   padding-bottom: 25px;
   text-align: center;
   margin: 0 auto;
+  width: 247px;
 
   @media (min-width: @tablet-width) {
-    width: 256px;
+    width: 137px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 400px;
+    width: 290px;
+  }
+}
+
+.reasons__item--city .reasons__content {
+  width: 240px;
+
+  @media (min-width: @tablet-width) {
+    width: 170px;
+    padding-bottom: 0;
+  }
+}
+
+.reasons__item--bridge .reasons__content {
+  width: 260px;
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    padding-bottom: 0;
   }
 }
 
 .reasons__image {
   margin: 0;
+}
+
+.reasons__item--bridge .reasons__image {
+  @media (min-width: @desktop-width) {
+    height: 256px;
+  }
+
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
+}
+
+.reasons__item--city .reasons__image {
+  @media (min-width: @desktop-width) {
+    height: 256px;
+  }
 }

@@ -11,29 +11,39 @@
   }
 }
 
-.social__link {
-  display: inline-block;
+.social__item {
   width: 48px;
   height: 46px;
   background-color: @skyblue;
-  vertical-align: middle;
-  background-repeat: no-repeat;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+}
+
+.social__link {
+  position: absolute;
+  fill: #ffffff;
+
+  &:active {
+    fill: #d5d5d5;
+  }
 
   &--twitter {
-    background-image: url("../img/icon-twitter.svg");
-    background-size: 18px 14px;
-    background-position: 17px 16px;
+    padding: 16px 14px;
+    padding-top: 12px;
   }
 
   &--facebook {
-    background-image: url("../img/icon-facebook.svg");
-    background-size: 9px 18px;
-    background-position: 21px 14px;
+    padding: 20px 20px;
+    padding-top: 13px;
   }
 
   &--youtube {
-    background-image: url("../img/icon-youtube.svg");
-    background-size: 20px 14px;
-    background-position: 14px 16px;
+    padding: 10px 14px;
   }
 }

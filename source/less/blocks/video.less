@@ -38,10 +38,11 @@
 }
 
 .video__control {
-  padding: 18px 10px;
   margin: 0 auto;
   width: 280px;
   background-color: #eaeaea;
+  padding: 20px;
+  padding-left: 25px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
@@ -50,11 +51,11 @@
     opacity: 0.6;
     bottom: 0px;
     left: 0px;
-    width: 84%;
+    width: 648px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 66%;
+    width: 800px;
   }
 
   &::before {
@@ -62,8 +63,8 @@
     content: "";
     width: 280px;
     height: 45px;
-    bottom: 63px;
-    left: 20px;
+    bottom: 67px;
+    left: 1px;
     background-color: black;
     opacity: 0.6;
 
@@ -80,8 +81,18 @@
   height: 3px;
   background-color: #ffffff;
   opacity: 0.2;
-  bottom: 82px;
-  left: 42px;
+  bottom: 87px;
+  left: 24px;
+
+  @media (min-width: @tablet-width) {
+    width: 389px;
+    bottom: 32px;
+    left: 101px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 540px;
+  }
 }
 
 .video__scroll-toggle {
@@ -106,19 +117,21 @@
 }
 
 .video__replay {
-  margin-left: 18px;
-
   @media (min-width: @tablet-width) {
     fill: #ffffff;
   }
 }
 
 .video__subtitles {
-  margin-left: 120px;
+  margin-left: 116px;
 
   @media (min-width: @tablet-width) {
     fill: #ffffff;
     margin-left: 475px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 638px;
   }
 }
 
