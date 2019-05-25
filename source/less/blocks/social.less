@@ -1,6 +1,9 @@
 @import "../variables";
 
 .social__list {
+  position: relative;
+  margin: 0;
+  margin-top: 37px;
   list-style: none;
   padding-left: 0;
   display: flex;
@@ -12,7 +15,8 @@
 }
 
 .social__item {
-  width: 48px;
+  position: relative;
+  width: 46px;
   height: 46px;
   background-color: @skyblue;
 
@@ -27,23 +31,24 @@
 
 .social__link {
   position: absolute;
-  fill: #ffffff;
+  fill: @white-text;
 
   &:active {
     fill: #d5d5d5;
   }
 
   &--twitter {
-    padding: 16px 14px;
-    padding-top: 12px;
+    top: 12px;
+    left: 13px;
   }
 
   &--facebook {
-    padding: 20px 20px;
-    padding-top: 13px;
+    top: 12px;
+    left: 18px;
   }
 
   &--youtube {
-    padding: 10px 14px;
+    top: 12px;
+    left: 13px;
   }
 }

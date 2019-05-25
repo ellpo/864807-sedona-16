@@ -1,8 +1,9 @@
 @import "../variables";
 
 .main-nav__list {
+  position: relative;
   margin: 0;
-  background-color: #ffffff;
+  background-color: @white-text;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -23,7 +24,10 @@
   position: absolute;
   fill: @white-text;
   top: 2%;
-  right: 5%;
+  right: 4%;
+  background-color: transparent;
+  border: none;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     display: none;
