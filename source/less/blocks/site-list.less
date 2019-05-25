@@ -8,7 +8,7 @@
 .site-list__item {
   background-color: @skyblue;
   font-family: "PT Sans bold", "Arial", sans-serif;
-  box-shadow: inset 0px 1px 0 0 #cccccc;
+  box-shadow: inset 0 1px 0 0 #cccccc;
   text-transform: uppercase;
   text-align: center;
 
@@ -26,7 +26,7 @@
     padding: 0;
     width: 153px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: @white-text;
     font-size: 14px;
     line-height: 26px;
   }
@@ -44,20 +44,25 @@
   display: block;
   text-decoration: none;
   color: @white-text;
-  padding: 22px 67px;
-
-  &:active {
-    color: #e5e5e5;
-  }
-
-  &:hover {
-    @media (min-width: @tablet-width) {
-      color: #81b3d2;
-    }
-  }
+  padding: 15px 74px;
+  padding-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     color: #000000;
     padding: 22px 23px;
+  }
+
+  &:active {
+    color: #e5e5e5;
+
+    @media (min-width: @tablet-width) {
+      color: #e5e5e5;
+    }
+  }
+
+  &:hover {
+    @media (min-width: @tablet-width) {
+      color: @skyblue;
+    }
   }
 }

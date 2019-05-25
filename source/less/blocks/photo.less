@@ -1,12 +1,5 @@
 @import "../variables";
 
-.video {
-  @media (min-width: @desktop-width) {
-    margin: 0 auto;
-    width: 67%;
-  }
-}
-
 .photo__list {
   list-style: none;
   margin: 0;
@@ -18,24 +11,32 @@
   }
 }
 
+.photo__list img {
+  width: 100%;
+}
+
 .photo__title {
   font-family: "PT Sans bold", "Arial", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
+  margin-top: 37px;
+  margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
   }
 }
 
-.photo__description {
+.photo__main-description {
   font-size: 14px;
-  line-height: 22px;
+  line-height: 24px;
   text-transform: uppercase;
   width: 96%;
   margin: 0 auto;
   text-align: center;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     width: 67%;
@@ -47,11 +48,16 @@
 }
 
 .photo__list-item {
+  position: relative;
   font-size: 14px;
   line-height: 24px;
+  border-top: solid 1px #d5d5d5;
+  padding-top: 20px;
 
   @media (min-width: @tablet-width) {
-    width: 324px;
+    width: 50%;
+    padding-top: 0;
+    border-top: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -59,29 +65,70 @@
   }
 
   &--large {
+    padding-top: 21px;
+
     @media (min-width: @tablet-width) {
-      width: 648px;
+      width: 100%;
+      padding-top: 0;
     }
 
     @media (min-width: @desktop-width) {
       width: 1200px;
     }
   }
+
+  &--bridge {
+    border-bottom: solid 1px #d5d5d5;
+
+    @media (min-width: @tablet-width) {
+      border-bottom: none;
+    }
+  }
 }
 
-.photo__name,
 .photo__polling {
   font-family: "PT Sans bold", "Arial", sans-serif;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 6px;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+  }
+}
+
+.photo__name {
+  font-family: "PT Sans bold", "Arial", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-left: 3%;
+  }
 }
 
 .photo__author {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 17px;
+    margin-left: 3%;
+  }
 }
 
 .photo__polling svg {
   margin-right: 10px;
+  fill: #999999;
+
+  @media (min-width: @desktop-width) {
+    fill: @white-text;
+  }
 }
 
 .photo__wrapper {
@@ -94,5 +141,28 @@
 
   @media (min-width: @desktop-width) {
     width: 100%;
+  }
+}
+
+.photo__description {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+  }
+
+  &--dark {
+    @media (min-width: @tablet-width) {
+      background-color: #eaeaea;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: inherit;
+    color: @white-text;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
   }
 }

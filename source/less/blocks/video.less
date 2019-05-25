@@ -2,6 +2,13 @@
 
 .video {
   position: relative;
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 84%;
+  }
+  @media (min-width: @desktop-width) {
+    width: 67%;
+  }
 }
 
 .video__title {
@@ -10,6 +17,8 @@
   text-transform: uppercase;
   padding: 0;
   text-align: center;
+  padding-top: 17px;
+  padding-bottom: 11px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -21,10 +30,10 @@
   line-height: 24px;
   text-transform: uppercase;
   padding: 0;
-  width: 74%;
+  width: 85%;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     width: 54%;
@@ -37,34 +46,38 @@
   }
 }
 
+.video img {
+  width: 100%;
+}
+
 .video__control {
+  position: relative;
   margin: 0 auto;
-  width: 280px;
+  width: 88%;
   background-color: #eaeaea;
   padding: 20px;
+  padding-top: 23px;
   padding-left: 25px;
+  padding-bottom: 17px;
+  margin-bottom: 74px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    background-color: #000000;
-    opacity: 0.6;
-    bottom: 0px;
-    left: 0px;
-    width: 648px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 800px;
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: -75px;
+    left: 0;
+    width: 100%;
+    padding: 32px 24px;
   }
 
   &::before {
     position: absolute;
     content: "";
-    width: 280px;
+    width: 100%;
     height: 45px;
-    bottom: 67px;
-    left: 1px;
+    bottom: 66px;
+    left: 0;
     background-color: black;
     opacity: 0.6;
 
@@ -77,16 +90,15 @@
 .video__scroll {
   position: absolute;
   content: "";
-  width: 235px;
+  width: 84%;
   height: 3px;
-  background-color: #ffffff;
-  opacity: 0.2;
+  background-color: rgba(255, 255, 255, 0.2);
   bottom: 87px;
-  left: 24px;
+  left: 9%;
 
   @media (min-width: @tablet-width) {
-    width: 389px;
-    bottom: 32px;
+    width: 60%;
+    bottom: 44px;
     left: 101px;
   }
 
@@ -101,7 +113,7 @@
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: @white-text;
   top: -4px;
   left: 31px;
 }
@@ -117,17 +129,52 @@
 }
 
 .video__replay {
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.2);
+  }
+
   @media (min-width: @tablet-width) {
-    fill: #ffffff;
+    fill: @white-text;
+
+    &:hover {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.2);
+    }
   }
 }
 
 .video__subtitles {
-  margin-left: 116px;
+  margin-left: 55%;
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.2);
+  }
 
   @media (min-width: @tablet-width) {
-    fill: #ffffff;
-    margin-left: 475px;
+    fill: @white-text;
+    margin-left: 85%;
+
+    &:hover {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.2);
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -136,9 +183,27 @@
 }
 
 .video__fullscreen {
-  margin-left: 20px;
+  margin-left: 11%;
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.2);
+  }
 
   @media (min-width: @tablet-width) {
-    fill: #ffffff;
+    margin-left: 2%;
+    fill: @white-text;
+
+    &:hover {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      fill: rgba(255, 255, 255, 0.2);
+    }
   }
 }

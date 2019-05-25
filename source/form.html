@@ -177,7 +177,7 @@
               </fieldset>
               <fieldset class="comment__chapter comment__chapter--impressions">
                 <legend class="comment__legend">Ваше общее впечатление:</legend>
-                <ul class="comment__list">
+                <ul class="comment__list comment__list--radio">
                   <li class="comment__item">
                     <input
                       class="visually-hidden comment__input-radio"
@@ -212,7 +212,7 @@
                 </ul>
               </fieldset>
               <fieldset class="comment__chapter comment__chapter--visited">
-                <legend class="comment__legend">
+                <legend class="comment__legend comment__legend--landmarks">
                   Посещенные достопримечательности:
                 </legend>
                 <ul class="comment__list landmarks">
@@ -234,7 +234,7 @@
                       id="mountain-bell"
                       checked
                     />
-                    <label for="mountain-bell">Гора Колокол</label>
+                    <label for="mountain-bell">Гора-Колокол</label>
                   </li>
                   <li class="comment__item">
                     <input
@@ -257,8 +257,8 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="comment__chapter comment__chapter--emotions">
-                <legend class="comment__legend">Опишите свои эмоции:</legend>
+              <fieldset class="comment__chapter">
+                <legend class="comment__legend comment__legend--emotions">Опишите свои эмоции:</legend>
                 <div class="comment__item">
                   <textarea
                     name="visitor-description"
@@ -380,6 +380,26 @@
         </div>
       </footer>
     </div>
+    <section class="warning-modal">
+    <div class="warning-modal__content">
+      <h2 class="warning-modal__title">Что то пошло не так!</h2>
+      <p class="warning-modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button type="button" class="warning-modal__button">Ок</button>
+    </div>
+    </section>
+    <section class="send-modal">
+      <div class="send-modal__content">
+      <h2 class="send-modal__title">Ваш отзыв отправлен!</h2>
+      <p class="send-modal__message">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+        В ближайшее время мы опубликуем его на сайте.
+      </p>
+      </div>
+      <div class="send-modal__button-area">
+      <button type="button" class="send-modal__button">Закрыть окно</button>
+    </div>
+
+    </section>
     <script>
       var navMain = document.querySelector(".main-nav");
       var navToggle = document.querySelector(".page-header__toggle");
