@@ -2,20 +2,29 @@
 
 .warning-modal {
   display: none;
-  position: absolute;
-  bottom: -1255px;
+  top: 50%;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: 1238px;
   width: 100%;
   box-shadow: 0 7px 15px 0 #d9d9d9;
   background-color: @white-text;
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
     width: 52%;
-    left: 37%;
-    bottom: -100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: 887px;
   }
 
   @media (min-width: @desktop-width) {
     width: 33%;
+    top: 50%;
+    left: 50%;
+    margin-left: -199px;
+    margin-top: 761px;
   }
 }
 
@@ -34,11 +43,12 @@
   font-size: 18px;
   margin: 0;
   text-transform: uppercase;
-  margin-top: 42px;
+  padding-top: 62px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 40px;
+    padding-top: 85px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -51,6 +61,10 @@
   text-transform: uppercase;
   margin-top: 27px;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .warning-modal__button {
@@ -60,12 +74,14 @@
   line-height: 26px;
   color: @white-text;
   background-color: @skyblue;
-  padding: 15px 124px;
+  padding: 15px 78px;
   text-transform: uppercase;
   outline: none;
   margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    padding: 15px 121px;
+    margin-bottom: 47px;
   }
 }
