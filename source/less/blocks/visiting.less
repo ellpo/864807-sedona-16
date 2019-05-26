@@ -11,10 +11,12 @@
 
   @media (min-width: @tablet-width) {
     width: 57%;
+    margin-bottom: 42px;
   }
 
   @media (min-width: @desktop-width) {
     width: 36%;
+    margin-bottom: 46px;
   }
 }
 
@@ -26,6 +28,12 @@
   margin-top: 28px;
   width: 100%;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    margin-top: 55px;
+    margin-bottom: 31px;
+  }
 }
 
 .visiting__button {
@@ -40,6 +48,7 @@
   width: 87%;
   margin: 0 auto;
   cursor: pointer;
+  outline: none;
 
   &:hover {
     background-color: #669ec0;
@@ -72,6 +81,16 @@
 .visiting__map {
   margin: 0;
   margin-top: 50px;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 58px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 66px;
+  }
 }
 
 .visiting__map img {
