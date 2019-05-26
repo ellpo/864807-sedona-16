@@ -235,6 +235,8 @@
 }
 
 .comment__item {
+  position: relative;
+
   &--phone input {
     margin-bottom: 12px;
 
@@ -282,7 +284,6 @@
   }
 
   &--phone label {
-    position: relative;
     display: inline-block;
     margin: 0;
     margin-left: 23px;
@@ -309,7 +310,7 @@
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
       top: 32px;
-      left: 200px;
+      right: 0;
 
       @media (min-width: @tablet-width) {
         top: 32px;
@@ -318,13 +319,12 @@
 
       @media (min-width: @desktop-width) {
         left: 342px;
-        top: -17px;
+        top: 0;
       }
     }
   }
 
   &--email label {
-    position: relative;
     display: inline-block;
     margin: 0;
     margin-left: 22px;
@@ -351,7 +351,7 @@
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
       top: 32px;
-      left: 200px;
+      right: 0;
 
       @media (min-width: @tablet-width) {
         top: 32px;
@@ -359,8 +359,8 @@
       }
 
       @media (min-width: @desktop-width) {
-        left: 423px;
-        top: -13px;
+        left: 498px;
+        top: 0;
       }
     }
   }
@@ -643,7 +643,7 @@
   padding-top: 18px;
 }
 
-.comment__label-phone p {
+.comment__label-phone span {
   padding: 0;
   margin: 0;
   display: inline-block;
