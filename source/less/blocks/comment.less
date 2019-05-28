@@ -313,8 +313,8 @@
       right: 0;
 
       @media (min-width: @tablet-width) {
-        top: 32px;
-        left: 569px;
+        top: 33px;
+        left: 593px;
       }
 
       @media (min-width: @desktop-width) {
@@ -354,12 +354,12 @@
       right: 0;
 
       @media (min-width: @tablet-width) {
-        top: 32px;
-        left: 568px;
+        top: 34px;
+        left: 592px;
       }
 
       @media (min-width: @desktop-width) {
-        left: 498px;
+        left: 500px;
         top: 0;
       }
     }
@@ -367,19 +367,28 @@
 }
 
 .comment__item textarea {
-  padding: 17px 26px 22px 21px;
+  padding: 13px 25px 20px 17px;
   outline: none;
   background-color: #f2f2f2;
-  border: none;
+  border: solid 4px #f2f2f2;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: @white-text;
+    border: solid 4px #e5e5e5;
+  }
 
   @media (min-width: @tablet-width) {
     width: 93%;
-    padding: 17px 26px 22px 24px;
+    padding: 13px 25px 19px 20px;
   }
 
   @media (min-width: @desktop-width) {
     width: 95%;
-    padding: 17px 26px 22px 21px;
+    padding: 11px 21px 20px 17px;
   }
 }
 
@@ -471,6 +480,18 @@
     left: -78px;
     background-color: #f2f2f2;
     border-radius: 5px;
+  }
+}
+
+.comment__input-checkbox:focus + label {
+  &::before {
+    outline: #000000 dotted 1px;
+  }
+}
+
+.comment__input-radio:focus + label {
+  &::before {
+    outline: #000000 dotted 1px;
   }
 }
 
@@ -589,6 +610,19 @@
   cursor: pointer;
   margin-top: 44px;
   margin-bottom: 74px;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: #e5e5e5;
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 
   @media (min-width: @tablet-width) {
     width: 50%;
