@@ -63,14 +63,20 @@
   }
 
   &--current {
-    color: #766357;
-  }
+    @media (min-width: @tablet-width) {
+      color: #766357;
+    }
 
-  &:hover {
-    color: #604e43;
-  }
+    &:hover {
+      @media (min-width: @tablet-width) {
+        color: #604e43;
+      }
+    }
 
-  &:active {
-    color: #d6d0cd;
+    &:active {
+      @media (min-width: @tablet-width) {
+        color: #d6d0cd;
+      }
+    }
   }
 }
